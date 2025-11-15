@@ -25,6 +25,7 @@ public class controller {
     ResponseEntity<String> greetInfo(){
         return ResponseEntity.ok("Hello All, Welcome to home page");
     }
+    //Testing
     @DeleteMapping(path = "/{id}")
     ResponseEntity<Void> deleteCourse(@PathVariable Long id){
         Integer currentIndex = IntStream.range(0, courses.size()).filter(index-> courses.get(index).id()==id).findFirst().orElse(-1);
