@@ -21,6 +21,10 @@ public class controller {
     ResponseEntity<CourseDto> addCourse(@RequestBody CourseDto courseDto){
         return new ResponseEntity(courses.add(courseDto), HttpStatus.CREATED);
     }
+    @GetMapping("/greet")
+    ResponseEntity<String> greetInfo(){
+        return ResponseEntity.ok("Hello All, Welcome to home page");
+    }
 
     @DeleteMapping(path = "/{id}")
     ResponseEntity<Void> deleteCourse(@PathVariable Long id){
