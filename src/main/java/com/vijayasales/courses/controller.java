@@ -23,7 +23,7 @@ public class controller {
     }
     @GetMapping("/greet")
     ResponseEntity<String> greetInfo(){
-        return ResponseEntity.ok("Hello All, Welcome to home page");
+        return ResponseEntity.ok("Hello All, Welcome to home page... From Palakol");
     }
     //Testing
     @DeleteMapping(path = "/{id}")
